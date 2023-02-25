@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(273, 75%, 66%) */
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    
+}
+
+.all-card {
+   
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60rem;
+    /* margin: 2rem 2rem; */
+    gap: 50px;
+    border-radius: 20px;
+
+} 
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    width: full;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding:0rem 0rem 2rem 1rem; 
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+}
+.img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* display: inline;
+    overflow: visible; */
+    /* float: right; */
+    margin-top: 0rem;
+
+  
+}
+
+.img2 {
+    position: absolute;
+    top: px;
+    left: 1px;
+    right: 3px;
+    bottom: 5px;
+    /* border: 1px solid #000000; */
+}
+
+
+.all-text {
+    /* margin-right: 80vh; */
+
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    
+    padding-right: 7rem
+  
+}
+.faq {
+    font-family: kumbh Sans;
+    border-bottom: 0px;
+}
+.all-text > div {
+    margin-top: 20px;
+    padding: 1rem 0rem 0rem 0rem;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    font-family: Kumbh Sans;
+    font-weight: 500;   
+    
+
+
+
+}
