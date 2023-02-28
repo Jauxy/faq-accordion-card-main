@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    max-width:400px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    
+}
+
+.all-card {
+   
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem 0rem 0rem 25rem;
+    height: 50vh;
+    width: 60rem;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+/* .....image styling...... */
+.image-card {
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    width: 400px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding:0rem 2rem 0rem 2rem; 
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+}
+.img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 1rem;
+    margin-top: rem;
+    bottom: 3rem;
+
+  
+}
+
+.img2 {
+    position: absolute;
+    top: px;
+    left: 1px;
+    right: 3px;
+    bottom: 5px;
+}
+
+/* ....ACCORDION styling .....  */
+
+h1 {
+    margin-left: 1.2rem;
+}  
+.accordion {
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+    font-family: Kumbh Sans, sans-serif; 
+}
+
+.faq-label, .faq-content {
+    padding: 14px 20px;
+}
+
+.faq-label {
+    display: block;
+    color: hsl(238, 29%, 16%);
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+    border-bottom: 0.1px solid hsl(240, 5%, 91%);
+}
+
+.faq-label:hover {
+    color: hsl(14, 88%, 65%)
+}
+
+.faq-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url(./images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: content;
+    transition: 0.4s;
+}
+
+.faq-content {
+    background-color: white;
+    color: hsl(240, 6%, 50%);
+    line-height: 1.6;
+    font-size: 14px;
+    display: none;
+}
+
+.faq-input {
+    display: none; 
+}
+
+.faq-input:checked ~ .faq-content {
+    display: block;
+}
+
+.faq-input:checked ~ .faq-label::after  {
+    transform: translateY(-50%) rotate(0.5turn);
+} 
+
+/* .....Response Media Queries ..... */
+@media only screen and (max-width: 600px) {
+    
+    
+}
